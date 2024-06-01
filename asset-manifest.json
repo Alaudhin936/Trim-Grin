@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Trim-Grin/static/css/main.2d9f6c5e.css",
+    "main.js": "/Trim-Grin/static/js/main.a582f0f1.js",
+    "static/js/453.501336a2.chunk.js": "/Trim-Grin/static/js/453.501336a2.chunk.js",
+    "static/media/Dandruf Care.jpg": "/Trim-Grin/static/media/Dandruf Care.67932e556b0344c45f9d.jpg",
+    "static/media/Head-Massauge.jpg": "/Trim-Grin/static/media/Head-Massauge.1c7fd8eeec97bc964b02.jpg",
+    "static/media/Facial.jpg": "/Trim-Grin/static/media/Facial.fbfda5cf978e0c84619f.jpg",
+    "static/media/straightening.jpg": "/Trim-Grin/static/media/straightening.c4efec160d90d61f89a4.jpg",
+    "static/media/coloring.jpg": "/Trim-Grin/static/media/coloring.4a1641893953a9ba535e.jpg",
+    "static/media/adult-hairdresser-shaving-customers-beard-hair-salon.jpg": "/Trim-Grin/static/media/adult-hairdresser-shaving-customers-beard-hair-salon.608aeaae355ca045ead1.jpg",
+    "static/media/Scalp-Treatment.jpg": "/Trim-Grin/static/media/Scalp-Treatment.8b63887a5c36af06c517.jpg",
+    "static/media/healthy-beautiful-manicure-manicurist.jpg": "/Trim-Grin/static/media/healthy-beautiful-manicure-manicurist.908ee420f0fe245447b5.jpg",
+    "static/media/Logo.png": "/Trim-Grin/static/media/Logo.bf22498f4e8ab51a90db.png",
+    "static/media/hair-fall.jpg": "/Trim-Grin/static/media/hair-fall.b38bc9a4eeff463fdab1.jpg",
+    "static/media/wax.webp": "/Trim-Grin/static/media/wax.ddcfd44d076036909698.webp",
+    "static/media/cancel.png": "/Trim-Grin/static/media/cancel.5949e4245eac826e4fad.png",
+    "static/media/down-arrow.png": "/Trim-Grin/static/media/down-arrow.d1b50c1191b185006267.png",
+    "index.html": "/Trim-Grin/index.html",
+    "main.2d9f6c5e.css.map": "/Trim-Grin/static/css/main.2d9f6c5e.css.map",
+    "main.a582f0f1.js.map": "/Trim-Grin/static/js/main.a582f0f1.js.map",
+    "453.501336a2.chunk.js.map": "/Trim-Grin/static/js/453.501336a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d9f6c5e.css",
+    "static/js/main.a582f0f1.js"
+  ]
+}
