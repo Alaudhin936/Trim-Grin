@@ -143,7 +143,7 @@ nav ul {
     animation-direction: normal;
     animation-play-state: running;
   }
-
+  
   .mob-nav li a {
     text-align: center;
     position: relative;
@@ -170,15 +170,22 @@ nav ul {
   nav {
     display: none;
   }
+  .mob-nav{
+height: 32vh;
+  }
 }
 @media (max-width: 450px) {
   .mob-nav {
-    height: 30vh;
+    height: 32.5vh;
     position: absolute;
     left: 105px;
     top: 100px;
   }
-
+  .routes {
+    top: 13em;
+    z-index: 100;
+    position: relative;
+  }
   .mob-nav li a {
     top: 13px;
     position: relative;
