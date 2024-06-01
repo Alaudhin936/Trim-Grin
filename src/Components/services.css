@@ -1,0 +1,194 @@
+.sMain h1 {
+  text-align: center;
+  color: rgb(173, 163, 103);
+  box-shadow: 0 0 5px rgb(173, 163, 103);
+}
+.cart img{
+  width: 30px;
+}
+.cartnum{
+  display: flex;
+  position: absolute;
+  left: 21px;
+  top: 22px;
+  align-items: center;
+  justify-content: center;
+  border:1px solid;
+  border-radius:80%;
+   width:16px;
+   height: 19px;
+   background-color: red;
+   color: white;
+   
+}
+.cart{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 4px;
+}
+.search img {
+  width: 30px;
+  cursor: pointer;
+}
+.m-search {
+  display: flex;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  height: 10vh;
+  justify-content: space-between;
+  box-shadow: 0 0 3px gold;
+  padding: 10px;
+}
+::placeholder {
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.search input {
+  border: none;
+  background: none;
+  outline: none;
+  height: 39vh;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(34, 30, 30);
+  width: 550px;
+}
+
+.availed img {
+  width: 10em;
+  height: 10em;
+}
+
+.subMain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 60px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 5px rgb(172, 162, 107);
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.details button {
+  width: 120px;
+  transition: 0.2s ease-in-out;
+  height: 34px;
+  border: none;
+  background-color: rgb(180, 169, 106);
+  cursor: pointer;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+}
+.jio {
+  left: -60px;
+  top: -10px;
+}
+.availBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.availed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jioo img {
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.buttons button {
+  width: 130px;
+  height: 5vh;
+  background-color: rgb(180, 169, 106);
+  border: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.buttons button:hover {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(238, 218, 104);
+}
+.jioo img:hover {
+  transform: rotate(90deg);
+}
+.top .tmain {
+  display: grid;
+  height: 14vh;
+  padding: 40px;
+  grid-gap: 50px;
+  animation-name: fromleft;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-play-state: running;
+  animation-direction: normal;
+  grid-template-columns: repeat(1, auto);
+}
+@keyframes fromleft {
+  from {
+    transform: translateY(200%);
+  }
+}
+.details button:hover {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(238, 218, 104);
+}
+.pofer {
+  color: rgb(112, 108, 108);
+}
+.offer {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.details img {
+  width: 17em;
+  height: 17em;
+}
+@media (max-width: 1100px) {
+  .top {
+    flex-direction: column;
+  }
+  .search {
+    width: 300px;
+  }
+  .cart{
+    display: flex;
+    cursor: pointer;
+
+  }
+}
+@media (max-width:800px){
+ 
+}
