@@ -242,7 +242,7 @@ nav ul {
     animation-direction: normal;
     animation-play-state: running;
   }
-
+  
   .mob-nav li a {
     text-align: center;
     position: relative;
@@ -272,8 +272,13 @@ nav ul {
   nav {
     display: none;
   }
+<<<<<<< HEAD
   .mob-nav {
     height: 47vh;
+=======
+  .mob-nav{
+height: 32vh;
+>>>>>>> bd259914d3436bb14c8f9bba90a4ad9bc828f171
   }
 }
 @media (max-width: 450px) {
@@ -282,13 +287,21 @@ nav ul {
     height: 50vh;
   }
   .mob-nav {
+<<<<<<< HEAD
     height: 37vh;
+=======
+    height: 32.5vh;
+>>>>>>> bd259914d3436bb14c8f9bba90a4ad9bc828f171
     position: absolute;
     left: 115px;
     top: 100px;
   }
   .routes {
+<<<<<<< HEAD
     top: 8.3em;
+=======
+    top: 13em;
+>>>>>>> bd259914d3436bb14c8f9bba90a4ad9bc828f171
     z-index: 100;
     position: relative;
   }

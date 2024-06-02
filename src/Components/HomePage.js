@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
@@ -77,4 +78,14 @@ export default function HomePage() {
       </div>
     </div>
   );
+=======
+export default function HomePage(){
+    return(
+        <>
+    <h1>
+ Home Page
+    </h1>
+        </>
+    )
+>>>>>>> bd259914d3436bb14c8f9bba90a4ad9bc828f171
 }
