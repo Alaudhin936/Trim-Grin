@@ -95,7 +95,7 @@ export default function App() {
             />
             <div style={{ display: view ? "block" : "none" }}>
               <ul className="mob-nav">
-                <li><Link to="/" onClick={handleView}>Home</Link></li>
+                
                 <li>
                   <Link to="/" onClick={handleView}>
                     Home
