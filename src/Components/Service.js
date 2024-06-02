@@ -168,7 +168,7 @@ export default function Service() {
             </div>
             <div className="cart">
               <img src={cart} onClick={handleToCart} />
-              <span className="cartnum" style={{}}>
+              <span onClick={handleToCart} className="cartnum" style={{}}>
                 {empArr.length}
               </span>
             </div>
