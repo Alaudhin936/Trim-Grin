@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, Link, BrowserRouter, Navigate } from "react-router-dom";
+import whiteCancel from "./Components/icons8-cancel-100.png";
+import whitemenu from "./Components/white menu.png";
 import "./Components/services.css";
 import Service from "./Components/Service";
 import down from "./Components/down-arrow.png";
@@ -37,7 +39,7 @@ export default function App() {
       <div>
         <div
           className="navigation-bar"
-          style={{ backgroundColor: scrolled ? "rgb(169, 153, 133)" : "white" }}
+          style={{ backgroundColor: scrolled ? "rgb(41, 32, 24)" : "white" }}
         >
           <div>
             <img src={Logo} alt="Logo" />
@@ -86,7 +88,7 @@ export default function App() {
           </nav>
           <div className="mobileview">
             <img
-              src={view ? cancel : list}
+              src={view ? scrolled?whiteCancel:cancel : scrolled?whitemenu:list}
               onClick={handleView}
               style={{ width: "40px" }}
               alt="menu toggle"
@@ -94,22 +96,39 @@ export default function App() {
             <div style={{ display: view ? "block" : "none" }}>
               <ul className="mob-nav">
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>About</Link>
+                  <Link to="/" onClick={handleView}>
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/toService" onClick={handleView}>Services</Link>
+                  <Link to="/toAbout" onClick={handleView}>
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>Pricing</Link>
+                  <Link to="/toService" onClick={handleView}>
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>Salon Locator</Link>
+                  <Link to="/toAbout" onClick={handleView}>
+                    Pricing
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>Blog</Link>
+                  <Link to="/toAbout" onClick={handleView}>
+                    Salon Locator
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>Contact Us</Link>
+                  <Link to="/toAbout" onClick={handleView}>
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/toAbout" onClick={handleView}>
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -2,11 +2,24 @@
   width: 180px;
   position: relative;
 }
-.navigation-bar{
+.navigation-bar {
   z-index: 10000;
 }
+body {
+  overflow-x: hidden;
+}
+.bday-offer {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  justify-content: space-between;
+}
+.bday-offer img {
+  width: 20em;
+  height: 25em;
+}
 .sMain {
- z-index:0;
+  z-index: 0;
 }
 .mobileview {
   display: none;
@@ -26,12 +39,12 @@ nav {
   z-index: 1000;
   align-items: center;
   box-shadow: 0 0 8px black;
-  height: 22vh;
-background-color: rgb(242, 243, 244);
+  height: 18vh;
+  background-color: rgb(242, 243, 244);
   justify-content: space-between;
 }
 .routes {
-  top: 10em;
+  top: 6.8em;
   z-index: 100;
   position: relative;
 }
@@ -39,17 +52,16 @@ nav ul li {
   list-style: none;
   text-decoration: none;
   font-weight: 600;
-
   font-size: large;
 }
-.ma ul li a{
+.ma ul li a {
   color: white;
   text-decoration: none;
   transition: 0.15s ease-in-out;
 }
 .mo ul li a {
   text-decoration: none;
-  color: rgb(96, 100, 60);
+  color: rgb(166, 146, 30);
   transition: 0.15s ease-in-out;
 }
 .downn {
@@ -59,9 +71,8 @@ nav ul li {
   gap: 5px;
   top: 2px;
   z-index: 100;
-  
 }
-.ju{
+.ju {
   background-color: black;
 }
 .downn:hover ul {
@@ -70,12 +81,12 @@ nav ul li {
 .downn ul {
   background-color: rgb(187, 178, 130);
   position: absolute;
-  top: 2.3em;
+  top: 1.5em;
   transition: 0.5s ease-in-out;
   z-index: 1000;
   gap: 20px;
   display: grid;
-  
+
   grid-template-columns: repeat(3, auto);
   flex-direction: column;
 }
@@ -89,7 +100,7 @@ nav ul li {
 }
 .downn ul li:hover {
   transform: scale(1.1);
-  color:rgb(82, 82, 70);
+  color: rgb(82, 82, 70);
   cursor: pointer;
 }
 .downn img {
@@ -111,13 +122,101 @@ nav ul li {
 
 nav ul li a:hover {
   text-shadow: 0 0 10px rgb(85, 96, 42);
+  color: rgb(166, 146, 30);
 }
+.d-block {
+  height: 77vh;
+  object-fit: cover;
+  width: 100%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.adah3{
+  transition: 0.25s ease-in-out;
+}
+.adah3:hover{
+background-color: whitesmoke;
+color: black;
+}
+.carousel-caption {
+  animation: fadeIn 1.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-caption h3 {
+  border-radius: 90px;
+  background-color: rgb(42, 39, 39);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 17em;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav ul {
   display: flex;
   gap: 50px;
   text-decoration: none;
 }
 @media (max-width: 900px) {
+  .bday-offer {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .bday-offer img {
+    width: 25em;
+    height: 50vh;
+  }
+  .bday h1 {
+    font-size: x-large;
+  }
+  .carousel-caption {
+    animation: fadeIn 1.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-caption h3 {
+    background-color: black;
+    width: 17em;
+    height: 3vh;
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 90px;
+  }
+  p {
+    width: 18em;
+    height: 3vh;
+    font-size: xx-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(67, 73, 4);
+  }
+  .d-block {
+    height: 45vh;
+    object-fit: cover;
+    width: 100%;
+  }
   .mobileview {
     display: flex;
     cursor: pointer;
@@ -151,7 +250,7 @@ nav ul {
     top: 7px;
     font-weight: 600;
     transition: 0.15s ease-in-out;
-   color: white;
+    color: white;
     text-decoration: none;
   }
   .mob-nav li a:hover {
@@ -167,18 +266,32 @@ nav ul {
     left: -20px;
     position: relative;
   }
+  .navigation-bar {
+    height: 18vh;
+  }
   nav {
     display: none;
   }
+  .mob-nav {
+    height: 47vh;
+  }
 }
 @media (max-width: 450px) {
+  .bday-offer img {
+    width: 19em;
+    height: 50vh;
+  }
   .mob-nav {
-    height: 30vh;
+    height: 37vh;
     position: absolute;
-    left: 105px;
+    left: 115px;
     top: 100px;
   }
-
+  .routes {
+    top: 8.3em;
+    z-index: 100;
+    position: relative;
+  }
   .mob-nav li a {
     top: 13px;
     position: relative;

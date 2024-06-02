@@ -1,7 +1,10 @@
+.sMain{
+  font-family: l;
+}
 .sMain h1 {
   text-align: center;
   color: rgb(173, 163, 103);
-  box-shadow: 0 0 5px rgb(173, 163, 103);
+  
 }
 .cart img{
   width: 30px;

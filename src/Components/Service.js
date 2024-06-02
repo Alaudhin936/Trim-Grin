@@ -75,8 +75,8 @@ export default function Service() {
     },
     {
       sName: "Scalp Treatment",
-      offer: "Based On Patients Condition",
-      price: "---",
+      offer: "6999",
+      price: "9999",
       img: Scalp,
       description: "An Exclusive Offer For Men(HairCut+Shaving)",
       typee: "Face(unisex)",
@@ -87,6 +87,13 @@ export default function Service() {
       img: massauge,
       description: "An Exclusive Offer For Men(HairCut+Shaving)",
       typee: "12 Minutes",
+    },{
+      sName: "Dandruff care",
+      offer: 1599,
+      price: 2299,
+      img: dandruf,
+      description: "An Exclusive Offer For Men(HairCut+Shaving)",
+      typee: "Unisex",
     }
   ];
   const [empArr, setEmparr] = useState([]);
@@ -144,9 +151,11 @@ export default function Service() {
   return (
     <>
       <div className="top">
+   
         <div className="sMain">
+          <br></br>
           <h1>Our Services</h1>
-
+<br></br>
           <div className="m-search">
             <div className="search">
               <input
