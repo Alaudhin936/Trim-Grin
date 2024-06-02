@@ -75,8 +75,8 @@ export default function Service() {
     },
     {
       sName: "Scalp Treatment",
-      offer: "6999",
-      price: "9999",
+      offer: 6999,
+      price: 9999,
       img: Scalp,
       description: "An Exclusive Offer For Men(HairCut+Shaving)",
       typee: "Face(unisex)",
