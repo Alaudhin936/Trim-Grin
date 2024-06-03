@@ -304,7 +304,7 @@ nav ul {
 }
 @media (max-width: 450px) {
   .bday-offer img {
-    width: 19em;
+    width: 17em;
     height: 50vh;
   }
   .mob-nav {
@@ -314,7 +314,7 @@ nav ul {
     top: 100px;
   }
   .routes {
-    top: 9em;
+    top: 8.8em;
     z-index: 100;
     position: relative;
   }
