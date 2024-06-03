@@ -57,6 +57,8 @@ export default function HomePage() {
       <br />
       <hr />
       <br />
+
+      
       <div className="bday">
         <h1 style={{ textAlign: "center", fontWeight: "400" }}>
           Exclusive BirthDay Offer <span style={{ color: "green", fontSize: "small" }}>Limited Offer</span>

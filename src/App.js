@@ -10,10 +10,12 @@ import list from "./Components/list.png";
 import Logo from "./Components/Logo.png";
 import HomePage from "./Components/HomePage";
 import AboutPage from "./Components/AboutPage";
+import Spinner from "./Components/Spinner";
 
 export default function App() {
-  const [view, SetView] = useState(false);
+  const [view, setView] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -23,7 +25,7 @@ export default function App() {
   }, []);
 
   function handleView() {
-    SetView(!view);
+    setView(!view);
   }
 
   function handleScroll() {
@@ -33,6 +35,13 @@ export default function App() {
       setScrolled(false);
     }
   }
+
+  const handleRouteChange = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000); 
+  };
 
   return (
     <BrowserRouter>
@@ -47,13 +56,19 @@ export default function App() {
           <nav className={scrolled ? "ma" : "mo"}>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={handleRouteChange}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/toAbout">About</Link>
+                <Link to="/toAbout" onClick={handleRouteChange}>
+                  About
+                </Link>
               </li>
               <li className="downn">
-                <Link to="/toService">Services</Link>
+                <Link to="/toService" onClick={handleRouteChange}>
+                  Services
+                </Link>
                 <img src={down} alt="down arrow" />
                 <ul className={scrolled ? "dai" : "dai"}>
                   <li>HairDressing</li>
@@ -73,61 +88,118 @@ export default function App() {
                 </ul>
               </li>
               <li>
-                <Link to="/toAbout">Pricing</Link>
+                <Link to="/toAbout" onClick={handleRouteChange}>
+                  Pricing
+                </Link>
               </li>
               <li>
-                <Link to="/toAbout">Salon Locator</Link>
+                <Link to="/toAbout" onClick={handleRouteChange}>
+                  Salon Locator
+                </Link>
               </li>
               <li>
-                <Link to="/toAbout">Blog</Link>
+                <Link to="/toAbout" onClick={handleRouteChange}>
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/toAbout">Contact Us</Link>
+                <Link to="/toAbout" onClick={handleRouteChange}>
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </nav>
           <div className="mobileview">
             <img
-              src={view ? scrolled?whiteCancel:cancel : scrolled?whitemenu:list}
+              src={
+                view
+                  ? scrolled
+                    ? whiteCancel
+                    : cancel
+                  : scrolled
+                  ? whitemenu
+                  : list
+              }
               onClick={handleView}
               style={{ width: "40px" }}
               alt="menu toggle"
             />
             <div style={{ display: view ? "block" : "none" }}>
               <ul className="mob-nav">
-                
                 <li>
-                  <Link to="/" onClick={handleView}>
+                  <Link
+                    to="/"
+                    onClick={() => {
+                      handleView();
+                      handleRouteChange();
+                    }}
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>
+                  <Link
+                    to="/toAbout"
+                    onClick={() => {
+                      handleView();
+                      handleRouteChange();
+                    }}
+                  >
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/toService" onClick={handleView}>
+                  <Link
+                    to="/toService"
+                    onClick={() => {
+                      handleView();
+                      handleRouteChange();
+                    }}
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>
+                  <Link
+                    to="/toAbout"
+                    onClick={() => {
+                      handleView();
+                      handleRouteChange();
+                    }}
+                  >
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>
+                  <Link
+                    to="/toAbout"
+                    onClick={() => {
+                      handleView();
+                      handleRouteChange();
+                    }}
+                  >
                     Salon Locator
                   </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>
+                  <Link
+                    to="/toAbout"
+                    onClick={() => {
+                      handleView();
+                      handleRouteChange();
+                    }}
+                  >
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/toAbout" onClick={handleView}>
+                  <Link
+                    to="/toAbout"
+                    onClick={() => {
+                      handleView();
+                      handleRouteChange();
+                    }}
+                  >
                     Contact Us
                   </Link>
                 </li>
@@ -136,12 +208,16 @@ export default function App() {
           </div>
         </div>
         <div className="routes">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/toAbout" element={<AboutPage />} />
-            <Route path="/toService" element={<Service />} />
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
+          {loading ? (
+            <Spinner />
+          ) : (
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/toAbout" element={<AboutPage />} />
+              <Route path="/toService" element={<Service />} />
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+          )}
         </div>
       </div>
     </BrowserRouter>

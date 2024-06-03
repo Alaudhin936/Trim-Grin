@@ -176,7 +176,7 @@ nav ul {
     gap: 20px;
     padding: 40px;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .bday-offer img {
     width: 25em;
