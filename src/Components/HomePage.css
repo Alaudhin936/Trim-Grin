@@ -170,6 +170,32 @@ nav ul {
   gap: 50px;
   text-decoration: none;
 }
+.toupimg{
+  position: fixed;
+  width: 30px;
+  border-radius: 30px;
+  background-color: rgb(198, 197, 186);
+  cursor: pointer;
+  border: 1px solid;
+  padding: 5px;
+  z-index: 1000000;
+  bottom: 3em;
+  right: 3em;
+  transition: 0.2s ease-in-out;
+  animation-duration: 1s;
+  animation-name: upto;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-iteration-count: initial;
+}
+.toupimg:hover{
+  background-color: rgb(169, 158, 95);
+}
+@keyframes upto{
+  from{
+    transform: translateY(200%);
+  }
+}
 @media (max-width: 900px) {
   .bday-offer {
     display: flex;

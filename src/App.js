@@ -11,6 +11,7 @@ import Logo from "./Components/Logo.png";
 import HomePage from "./Components/HomePage";
 import AboutPage from "./Components/AboutPage";
 import Spinner from "./Components/Spinner";
+import top from "./Components/top.png";
 
 export default function App() {
   const [view, setView] = useState(false);
@@ -40,12 +41,23 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000); 
+    }, 1000);
   };
-
+  function handleToTop() {
+    window.scrollBy({
+      top: -100000,
+      behavior: "smooth",
+    });
+  }
   return (
     <BrowserRouter>
       <div>
+        <img
+          onClick={handleToTop}
+          src={top}
+          style={{ display: scrolled ? "block" : "none" }}
+          className="toupimg"
+        />
         <div
           className="navigation-bar"
           style={{ backgroundColor: scrolled ? "rgb(41, 32, 24)" : "white" }}
