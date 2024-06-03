@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Trim-Grin/static/css/main.b61716fa.css",
+    "main.css": "/Trim-Grin/static/css/main.6f4df927.css",
     "main.js": "/Trim-Grin/static/js/main.b8d7bbe3.js",
     "static/js/453.501336a2.chunk.js": "/Trim-Grin/static/js/453.501336a2.chunk.js",
     "static/media/Dandruf Care.jpg": "/Trim-Grin/static/media/Dandruf Care.67932e556b0344c45f9d.jpg",
@@ -24,12 +24,12 @@
     "static/media/cancel.png": "/Trim-Grin/static/media/cancel.5949e4245eac826e4fad.png",
     "static/media/down-arrow.png": "/Trim-Grin/static/media/down-arrow.d1b50c1191b185006267.png",
     "index.html": "/Trim-Grin/index.html",
-    "main.b61716fa.css.map": "/Trim-Grin/static/css/main.b61716fa.css.map",
+    "main.6f4df927.css.map": "/Trim-Grin/static/css/main.6f4df927.css.map",
     "main.b8d7bbe3.js.map": "/Trim-Grin/static/js/main.b8d7bbe3.js.map",
     "453.501336a2.chunk.js.map": "/Trim-Grin/static/js/453.501336a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b61716fa.css",
+    "static/css/main.6f4df927.css",
     "static/js/main.b8d7bbe3.js"
   ]
 }
