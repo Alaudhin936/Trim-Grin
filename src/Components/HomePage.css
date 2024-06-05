@@ -34,8 +34,23 @@ nav {
   background-color: rgb(242, 243, 244);
   justify-content: space-between;
 }
-.bride {
+@keyframes onme{
+  from{
+    opacity: 0;
+  }to{
+opacity: 1;
+  }
+}
+.bride.animate {
+  animation-name: onme;
   display: flex;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-iteration-count: initial;
+}
+.bride {
+  display: none;
   gap: 4vw;
   align-items: center;
 }
@@ -66,7 +81,7 @@ nav {
   font-weight: 600;
 }
 .abtbride {
-  gap: 2vw;
+  gap: 3vw;
   display: flex;
   flex-direction: column;
   height: 35vw;
@@ -250,7 +265,7 @@ nav ul {
     transform: translateY(200%);
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .whatcando h1 {
     font-size: 2em;
     font-weight: 500;
@@ -293,10 +308,8 @@ nav ul {
 @media (max-width: 550px) {
   .abtbride button {
     height: 20vh;
-
     transition: 0.24s ease-in-out;
     width: 8em;
-
     color: white;
     font-size: 1.2em;
     border-radius: 30px;
@@ -363,7 +376,7 @@ nav ul {
     color: rgb(67, 73, 4);
   }
   .d-block {
-    height: 45vh;
+    height: 60vh;
     object-fit: cover;
     width: 100%;
   }
@@ -427,6 +440,11 @@ nav ul {
   }
 }
 @media (max-width: 450px) {
+  .d-block {
+    height: 45vh;
+    object-fit: cover;
+    width: 100%;
+  }
   .mob-nav {
     height: 37vh;
     position: absolute;
