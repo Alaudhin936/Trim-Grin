@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Trim-Grin/static/css/main.6f4df927.css",
-    "main.js": "/Trim-Grin/static/js/main.b8d7bbe3.js",
+    "main.css": "/Trim-Grin/static/css/main.b035cb4f.css",
+    "main.js": "/Trim-Grin/static/js/main.7e5898a6.js",
     "static/js/453.501336a2.chunk.js": "/Trim-Grin/static/js/453.501336a2.chunk.js",
     "static/media/Dandruf Care.jpg": "/Trim-Grin/static/media/Dandruf Care.67932e556b0344c45f9d.jpg",
     "static/media/Head-Massauge.jpg": "/Trim-Grin/static/media/Head-Massauge.1c7fd8eeec97bc964b02.jpg",
@@ -9,6 +9,7 @@
     "static/media/straightening.jpg": "/Trim-Grin/static/media/straightening.c4efec160d90d61f89a4.jpg",
     "static/media/coloring.jpg": "/Trim-Grin/static/media/coloring.4a1641893953a9ba535e.jpg",
     "static/media/adult-hairdresser-shaving-customers-beard-hair-salon.jpg": "/Trim-Grin/static/media/adult-hairdresser-shaving-customers-beard-hair-salon.608aeaae355ca045ead1.jpg",
+    "static/media/Bride.jpg": "/Trim-Grin/static/media/Bride.30cfac032529547b98ce.jpg",
     "static/media/WomenCut.jpg": "/Trim-Grin/static/media/WomenCut.77b05310b477692d185e.jpg",
     "static/media/Scalp-Treatment.jpg": "/Trim-Grin/static/media/Scalp-Treatment.8b63887a5c36af06c517.jpg",
     "static/media/Haircutshave.jpg": "/Trim-Grin/static/media/Haircutshave.864055115541e56557ed.jpg",
@@ -24,12 +25,12 @@
     "static/media/cancel.png": "/Trim-Grin/static/media/cancel.5949e4245eac826e4fad.png",
     "static/media/down-arrow.png": "/Trim-Grin/static/media/down-arrow.d1b50c1191b185006267.png",
     "index.html": "/Trim-Grin/index.html",
-    "main.6f4df927.css.map": "/Trim-Grin/static/css/main.6f4df927.css.map",
-    "main.b8d7bbe3.js.map": "/Trim-Grin/static/js/main.b8d7bbe3.js.map",
+    "main.b035cb4f.css.map": "/Trim-Grin/static/css/main.b035cb4f.css.map",
+    "main.7e5898a6.js.map": "/Trim-Grin/static/js/main.7e5898a6.js.map",
     "453.501336a2.chunk.js.map": "/Trim-Grin/static/js/453.501336a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f4df927.css",
-    "static/js/main.b8d7bbe3.js"
+    "static/css/main.b035cb4f.css",
+    "static/js/main.7e5898a6.js"
   ]
 }
