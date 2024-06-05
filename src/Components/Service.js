@@ -80,21 +80,23 @@ export default function Service() {
       img: Scalp,
       description: "An Exclusive Offer For Men(HairCut+Shaving)",
       typee: "Face(unisex)",
-    },{
+    },
+    {
       sName: "Head Massauge",
       offer: 159,
       price: 399,
       img: massauge,
       description: "An Exclusive Offer For Men(HairCut+Shaving)",
       typee: "12 Minutes",
-    },{
+    },
+    {
       sName: "Dandruff care",
       offer: 1599,
       price: 2299,
       img: dandruf,
       description: "An Exclusive Offer For Men(HairCut+Shaving)",
       typee: "Unisex",
-    }
+    },
   ];
   const [empArr, setEmparr] = useState([]);
   const totalPrice = empArr.reduce((total, std) => total + std.offer, 0);
@@ -132,6 +134,13 @@ export default function Service() {
         return [...prev, service];
       });
     }
+    for (let i = 0; i < serviceDetails.length; i++) {
+      if (empArr.length === i) {
+        window.alert(
+          i + 1 + (i == 0 ? " Item Added To Cart" : "Items Added To Cart")
+        );
+      }
+    }
     handlingavail();
   }
 
@@ -151,11 +160,10 @@ export default function Service() {
   return (
     <>
       <div className="top">
-   
         <div className="sMain">
           <br></br>
           <h1>Our Services</h1>
-<br></br>
+          <br></br>
           <div className="m-search">
             <div className="search">
               <input

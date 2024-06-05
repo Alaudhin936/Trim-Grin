@@ -8,16 +8,7 @@
 body {
   overflow-x: hidden;
 }
-.bday-offer {
-  display: flex;
-  gap: 20px;
-  padding: 50px;
-  justify-content: space-between;
-}
-.bday-offer img {
-  width: 20em;
-  height: 25em;
-}
+
 .sMain {
   z-index: 0;
 }
@@ -43,8 +34,52 @@ nav {
   background-color: rgb(242, 243, 244);
   justify-content: space-between;
 }
+.bride {
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+}
+.abtbride .space {
+  letter-spacing: 6px;
+}
+.spacee {
+  font-size: 2.5em;
+}
+.abtbride button:hover{
+  border: 1px solid rgb(89, 89, 18);
+  background-color: white;
+  color: rgb(89, 89, 18);
+}
+.abtbride button{
+  border: none;
+  outline: none;
+  transition: 0.24s ease-in-out;
+  width: 18vw;
+  height: 4vw;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 30px;
+  background-color: rgb(174, 162, 96);
+}
+.space1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.abtbride {
+  gap: 2vw;
+  display: flex;
+  flex-direction: column;
+  height: 35vw;
+  padding: 40px;
+  width: 40vw;
+  background-color: lightyellow;
+}
+.bride img {
+  width: 40vw;
+  height: 35vw;
+}
 .routes {
-  top: 8em;
+  top: 7em;
   z-index: 100;
   position: relative;
 }
@@ -139,12 +174,26 @@ nav ul li a:hover {
     transform: translateY(0);
   }
 }
-.adah3{
+.adah3 {
   transition: 0.25s ease-in-out;
 }
-.adah3:hover{
-background-color: whitesmoke;
-color: black;
+.whatcando {
+  display: flex;
+  gap: 1.4em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.whatcando h1 {
+  color: rgb(106, 94, 31);
+  width: 16em;
+  font-size: 3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.adah3:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 .carousel-caption {
   animation: fadeIn 1.3s ease-in-out;
@@ -170,7 +219,7 @@ nav ul {
   gap: 50px;
   text-decoration: none;
 }
-.toupimg{
+.toupimg {
   position: fixed;
   width: 30px;
   border-radius: 30px;
@@ -188,29 +237,101 @@ nav ul {
   animation-play-state: running;
   animation-iteration-count: initial;
 }
-.toupimg:hover{
+.toupimg:hover {
   background-color: rgb(169, 158, 95);
 }
-@keyframes upto{
-  from{
+@keyframes upto {
+  from {
     transform: translateY(200%);
   }
 }
+@media (max-width:1050px){
+  .whatcando h1{
+    font-size:2em;
+    font-weight: 500;
+  }
+  .abtbride button{
+    border: none;
+    outline: none;
+    transition: 0.24s ease-in-out;
+    width: 10em;
+    height: 2em;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    background-color: rgb(174, 162, 96);
+  } 
+.abtbride {
+  gap: 2vw;
+  display: flex;
+  flex-direction: column;
+  height: 25em;
+  padding: 40px;
+  width: 30em;
+  background-color: lightyellow;
+}
+  .bride img {
+    width: 30em;
+    height: 25em;
+  }
+  .bride{
+    flex-direction: column;
+  }
+  .spacee {
+    font-size: 2.5em;
+  }
+  .space1 {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
+@media (max-width:550px){
+  .abtbride button{
+    border: none;
+    outline: none;
+    transition: 0.24s ease-in-out;
+    width: 9em;
+    height: 2em;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    background-color: rgb(174, 162, 96);
+  } 
+  .space{
+    letter-spacing: 2px;
+  }
+.abtbride {
+  gap: 2vw;
+  display: flex;
+  flex-direction: column;
+  height: 18em;
+  padding: 40px;
+  width: 18em;
+  gap: 1.2em;
+  background-color: lightyellow;
+}
+.whatcando h1{
+  font-size: 1.29em;
+  font-weight: 800;
+
+}
+  .bride img {
+    width: 18em;
+    height: 18em;
+  }
+  .bride{
+    flex-direction: column;
+  }
+  .spacee {
+    font-size: 1.3em;
+  }
+  .space1 {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+}
 @media (max-width: 900px) {
-  .bday-offer {
-    display: flex;
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
-    flex-direction: column-reverse;
-  }
-  .bday-offer img {
-    width: 25em;
-    height: 50vh;
-  }
-  .bday h1 {
-    font-size: x-large;
-  }
+  
   .carousel-caption {
     animation: fadeIn 1.3s ease-in-out;
     display: flex;
@@ -303,10 +424,7 @@ nav ul {
   }
 }
 @media (max-width: 450px) {
-  .bday-offer img {
-    width: 17em;
-    height: 50vh;
-  }
+  
   .mob-nav {
     height: 37vh;
     position: absolute;

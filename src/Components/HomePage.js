@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HomePage.css";
+import bride from "./SliderImages/Bride.jpg";
 import bdayOff from "./SliderImages/Bday-offer.jpg";
 import mainImg1 from "./SliderImages/ShopImg.jpg";
 import mainImg2 from "./SliderImages/Haircutshave.jpg";
@@ -45,9 +46,16 @@ export default function HomePage() {
         <Carousel controls={true} indicators={true} interval={3000}>
           {coroDetails.map((std, index) => (
             <Carousel.Item key={index}>
-                <img src={std.imagee} className="d-block w-100" alt={std.Caption1} />
+              <img
+                src={std.imagee}
+                className="d-block w-100"
+                alt={std.Caption1}
+              />
               <Carousel.Caption className="carousel-caption">
-              <Link to="/toService" style={{textDecoration:"none"}}>   <h3 className="adah3">{std.Caption1}</h3></Link>
+                <Link to="/toService" style={{ textDecoration: "none" }}>
+                  {" "}
+                  <h3 className="adah3">{std.Caption1}</h3>
+                </Link>
                 <p>{std.Caption2}</p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -57,23 +65,20 @@ export default function HomePage() {
       <br />
       <hr />
       <br />
-
-      
-      <div className="bday">
-        <h1 style={{ textAlign: "center", fontWeight: "400" }}>
-          Exclusive BirthDay Offer <span style={{ color: "green", fontSize: "small" }}>Limited Offer</span>
-        </h1>
-        <div className="bday-offer">
-          <div>
-            Welcome to Trim and Grin Salon, where we're excited to introduce a special opening offer to celebrate our launch! As a token of our appreciation for your support, we are delighted to offer a fantastic deal exclusively for birthday boys. For the first two months, if you visit us on your birthday, you can enjoy a remarkable 50% discount on any of our services. Whether you're looking for a fresh haircut, a rejuvenating facial, or a professional shave, this offer allows you to indulge in premium grooming services at half the price. Join us at Trim and Grin and experience top-notch beauty and grooming treatments while celebrating your special day in style. Don't miss out on this limited-time opportunity to look and feel your best at an unbeatable price!
-            <br />
-            <br />
-            <span style={{ color: "red" }}>Conditions :</span>
-            <br />
-            To take advantage of our exclusive birthday offer at Trim and Grin, customers need to fulfill a couple of simple requirements. Firstly, please bring a valid Aadhar card as proof of your birthdate to verify eligibility for the 50% discount. Additionally, to qualify for this special offer, you must have visited our salon at least once before. This ensures that our loyal customers are rewarded with this fantastic deal. We value your patronage and look forward to celebrating your special day with premium grooming services at an unbeatable price. Join us and make your birthday extra special with Trim and Grin!
-          </div>
-          <div>
-            <img src={bdayOff} alt="Bday Offer" />
+      <div className="whatcando">
+        <div>Look Mirror,See YourSelf</div>
+        <h1>What Our Stylist Engineers Can Do For You</h1>
+        <div className="bride">
+          <div><img src={bride}/></div>
+          <div className="abtbride">
+            <div className="space">
+              EXCLUSIVE BRIDAL
+            </div>
+            <div >
+          <span className="space1"> Bespoke bridal looks </span> 
+         <span className="spacee"> for brides that cover all services.</span> 
+            </div>
+            <button>Know More</button>
           </div>
         </div>
       </div>
