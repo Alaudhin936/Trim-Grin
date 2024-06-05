@@ -45,11 +45,11 @@ export default function HomePage() {
   useEffect(() => {
     const handleScroll = () => {
       window.innerWidth < 450
-        ? setScroll(window.scrollY > 10 ? true : false)
-        : setScroll(window.scrollY > 50 ? true : false);
-        if(window.innerWidth<=550){
-          setScroll(window.scrollY > 0.1 ? true : false)
-        }
+        ? setScroll(window.scrollY > 0.5 ? true : false)
+        : setScroll(window.scrollY > 100 ? true : false);
+      if (window.innerWidth <= 550 && window.innerWidth >= 480) {
+        setScroll(window.scrollY > 0.1 ? true : false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -64,11 +64,7 @@ export default function HomePage() {
         <Carousel controls={true} indicators={true} interval={3000}>
           {coroDetails.map((std, index) => (
             <Carousel.Item key={index}>
-              <img
-                src={std.imagee}
-                className="d-block"
-                alt={std.Caption1}
-              />
+              <img src={std.imagee} className="d-block" alt={std.Caption1} />
               <Carousel.Caption className="carousel-caption">
                 <Link to="/toService" style={{ textDecoration: "none" }}>
                   <h3 className="adah3">{std.Caption1}</h3>
