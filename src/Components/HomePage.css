@@ -206,9 +206,8 @@ nav ul li a:hover {
 .whatcando h1 {
   color: rgb(106, 94, 31);
   width: 16em;
-  font-size: 3em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2.3em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
 }
 .adah3:hover {
@@ -249,7 +248,7 @@ nav ul {
   padding: 5px;
   z-index: 1000000;
   bottom: 3em;
-  right: 3em;
+  right: 1em;
   transition: 0.2s ease-in-out;
   animation-duration: 1s;
   animation-name: upto;
