@@ -66,7 +66,7 @@ export default function HomePage() {
       <hr />
       <br />
       <div className="whatcando">
-        <div>Look Mirror,See YourSelf</div>
+        <div className="look">Look Mirror,See YourSelf</div>
         <h1>What Our Stylist Engineers Can Do For You</h1>
         <div className="bride">
           <div><img src={bride}/></div>

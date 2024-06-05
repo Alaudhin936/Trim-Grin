@@ -45,12 +45,12 @@ nav {
 .spacee {
   font-size: 2.5em;
 }
-.abtbride button:hover{
+.abtbride button:hover {
   border: 1px solid rgb(89, 89, 18);
   background-color: white;
   color: rgb(89, 89, 18);
 }
-.abtbride button{
+.abtbride button {
   border: none;
   outline: none;
   transition: 0.24s ease-in-out;
@@ -184,11 +184,16 @@ nav ul li a:hover {
   justify-content: center;
   flex-direction: column;
 }
+.look {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 .whatcando h1 {
   color: rgb(106, 94, 31);
   width: 16em;
   font-size: 3em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
 }
 .adah3:hover {
@@ -245,12 +250,12 @@ nav ul {
     transform: translateY(200%);
   }
 }
-@media (max-width:1050px){
-  .whatcando h1{
-    font-size:2em;
+@media (max-width: 1050px) {
+  .whatcando h1 {
+    font-size: 2em;
     font-weight: 500;
   }
-  .abtbride button{
+  .abtbride button {
     border: none;
     outline: none;
     transition: 0.24s ease-in-out;
@@ -260,21 +265,21 @@ nav ul {
     font-size: 1.2em;
     border-radius: 30px;
     background-color: rgb(174, 162, 96);
-  } 
-.abtbride {
-  gap: 2vw;
-  display: flex;
-  flex-direction: column;
-  height: 25em;
-  padding: 40px;
-  width: 30em;
-  background-color: lightyellow;
-}
+  }
+  .abtbride {
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+    height: 25em;
+    padding: 40px;
+    width: 30em;
+    background-color: lightyellow;
+  }
   .bride img {
     width: 30em;
     height: 25em;
   }
-  .bride{
+  .bride {
     flex-direction: column;
   }
   .spacee {
@@ -285,41 +290,40 @@ nav ul {
     font-weight: 600;
   }
 }
-@media (max-width:550px){
-  .abtbride button{
-    border: none;
-    outline: none;
+@media (max-width: 550px) {
+  .abtbride button {
+    height: 20vh;
+
     transition: 0.24s ease-in-out;
-    width: 9em;
-    height: 2em;
+    width: 8em;
+
     color: white;
     font-size: 1.2em;
     border-radius: 30px;
     background-color: rgb(174, 162, 96);
-  } 
-  .space{
+  }
+  .space {
     letter-spacing: 2px;
   }
-.abtbride {
-  gap: 2vw;
-  display: flex;
-  flex-direction: column;
-  height: 18em;
-  padding: 40px;
-  width: 18em;
-  gap: 1.2em;
-  background-color: lightyellow;
-}
-.whatcando h1{
-  font-size: 1.29em;
-  font-weight: 800;
-
-}
+  .abtbride {
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+    height: 19em;
+    padding: 40px;
+    width: 18em;
+    gap: 1.2em;
+    background-color: lightyellow;
+  }
+  .whatcando h1 {
+    font-size: 1.29em;
+    font-weight: 800;
+  }
   .bride img {
     width: 18em;
-    height: 18em;
+    height: 19em;
   }
-  .bride{
+  .bride {
     flex-direction: column;
   }
   .spacee {
@@ -331,7 +335,6 @@ nav ul {
   }
 }
 @media (max-width: 900px) {
-  
   .carousel-caption {
     animation: fadeIn 1.3s ease-in-out;
     display: flex;
@@ -424,7 +427,6 @@ nav ul {
   }
 }
 @media (max-width: 450px) {
-  
   .mob-nav {
     height: 37vh;
     position: absolute;
