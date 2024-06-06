@@ -47,7 +47,7 @@ export default function HomePage() {
     const handleScroll1 = () => {
       window.innerWidth >= 1100
         ? setScroll1(window.scrollY > 650 ? true : false)
-        : setScroll1(window.scrollY > 500 ? true : false);
+        : setScroll1(window.scrollY > 580 ? true : false);
     };
     window.addEventListener("scroll", handleScroll1);
     return () => {
