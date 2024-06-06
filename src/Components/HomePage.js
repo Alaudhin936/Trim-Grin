@@ -52,7 +52,7 @@ export default function HomePage() {
       } else {
         window.innerWidth >= 1100
           ? setScroll1(window.scrollY > 500 ? true : false)
-          : setScroll1(window.scrollY > 260 ? true : false);
+          : setScroll1(window.scrollY > 160 ? true : false);
       }
     };
     window.addEventListener("scroll", handleScroll1);
