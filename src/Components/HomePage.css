@@ -36,9 +36,10 @@ nav {
 }
 @keyframes onme {
   from {
+
     transform: translateX(-200%);
-  }
-}
+
+  }}
 .skinn {
   display: flex;
   align-items: center;
