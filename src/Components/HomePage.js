@@ -45,14 +45,14 @@ export default function HomePage() {
   const [scroll1, setScroll1] = useState(false);
   useEffect(() => {
     const handleScroll1 = () => {
-      if (window.innerWidth < 900) {
+      if (window.innerHeight < 900) {
         window.innerWidth >= 1100
-          ? setScroll1(window.scrollY > 600 ? true : false)
+          ? setScroll1(window.scrollY > 650 ? true : false)
           : setScroll1(window.scrollY > 560 ? true : false);
       } else {
         window.innerWidth >= 1100
           ? setScroll1(window.scrollY > 500 ? true : false)
-          : setScroll1(window.scrollY > 430 ? true : false);
+          : setScroll1(window.scrollY > 260 ? true : false);
       }
     };
     window.addEventListener("scroll", handleScroll1);
@@ -64,7 +64,7 @@ export default function HomePage() {
     const handleScroll = () => {
       if (window.innerHeight > 900) {
         window.innerWidth < 480
-          ? setScroll(window.scrollY >= 5 ? true : false)
+          ? setScroll(window.scrollY >= 2 ? true : false)
           : setScroll(window.scrollY > 50 ? true : false);
         if (window.innerWidth <= 550 && window.innerWidth >= 480) {
           setScroll(window.scrollY > 0.1 ? true : false);

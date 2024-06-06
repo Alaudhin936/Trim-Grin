@@ -450,9 +450,7 @@ nav ul {
     font-weight: 600;
   }
 }
-.carousel .Carousel {
-  height: 80vw;
-}
+
 @media (max-width: 900px) {
   .carousel-caption {
     animation: fadeIn 1.3s ease-in-out;
