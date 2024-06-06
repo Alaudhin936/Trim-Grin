@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import skin from "./Service Images/close-up-portrait-young-bearded-man.png";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./HomePage.css";
@@ -41,11 +42,22 @@ export default function HomePage() {
   ];
 
   const [scroll, setScroll] = useState(false);
-
+  const [scroll1, setScroll1] = useState(false);
+  useEffect(() => {
+    const handleScroll1 = () => {
+      window.innerWidth >= 1100
+        ? setScroll1(window.scrollY > 650 ? true : false)
+        : setScroll1(window.scrollY > 600 ? true : false);
+    };
+    window.addEventListener("scroll", handleScroll1);
+    return () => {
+      window.removeEventListener("scroll", handleScroll1);
+    };
+  });
   useEffect(() => {
     const handleScroll = () => {
       window.innerWidth < 450
-        ? setScroll(window.scrollY > 0.5 ? true : false)
+        ? setScroll(window.scrollY > 5 ? true : false)
         : setScroll(window.scrollY > 50 ? true : false);
       if (window.innerWidth <= 550 && window.innerWidth >= 480) {
         setScroll(window.scrollY > 0.1 ? true : false);
@@ -94,6 +106,27 @@ export default function HomePage() {
               </span>
             </div>
             <button>Know More</button>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      <div className="skinn">
+        <div className={`skin-care ${scroll1 ? "jilo" : ""}`}>
+          <div className="written">
+            <div>
+              <span className="space">Skin Care</span>
+            </div>
+            <div>
+              <span className="space22">Natural Skin Care Services</span>
+              <br></br>
+              <span className="space11">
+                Replenish,Rejuvenate And Revitalize Your Skin
+              </span>
+            </div>
+            <button>Know More</button>
+          </div>
+          <div>
+            <img src={skin} />
           </div>
         </div>
       </div>

@@ -34,17 +34,61 @@ nav {
   background-color: rgb(242, 243, 244);
   justify-content: space-between;
 }
-@keyframes onme{
-  from{
-    opacity: 0;
-  }to{
-opacity: 1;
+@keyframes onme {
+  from {
+    transform: translateX(-200%);
   }
+}
+.skinn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skin-care .written {
+  padding: 40px;
+}
+.written {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.space11 {
+  font-size: 2.5em;
+}
+.written .space22 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+@keyframes movetotop {
+  from {
+    transform: translateX(180%);
+  }
+}
+.skin-care.jilo {
+  animation-name: movetotop;
+  animation-duration: 1.2s;
+  display: flex;
+  animation-iteration-count: initial;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+.skin-care {
+  display: none;
+  width: 84vw;
+  color: rgb(63, 62, 62);
+  justify-content: space-between;
+  padding: 10px;
+  height: 37vw;
+  background-color: rgb(170, 170, 170);
+}
+.skin-care img {
+  width: 20em;
+  height: 35vw;
 }
 .bride.animate {
   animation-name: onme;
   display: flex;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-direction: normal;
   animation-play-state: running;
   animation-iteration-count: initial;
@@ -54,6 +98,11 @@ opacity: 1;
   gap: 4vw;
   align-items: center;
 }
+.skin-care .space {
+  letter-spacing: 6px;
+  font-size: large;
+  text-transform: uppercase;
+}
 .abtbride .space {
   letter-spacing: 6px;
 }
@@ -61,6 +110,22 @@ opacity: 1;
   font-size: 2.5em;
 }
 .abtbride button:hover {
+  border: 1px solid rgb(89, 89, 18);
+  background-color: white;
+  color: rgb(89, 89, 18);
+}
+.written button {
+  border: none;
+  outline: none;
+  transition: 0.24s ease-in-out;
+  width: 18vw;
+  height: 4vw;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 30px;
+  background-color: rgb(78, 78, 76);
+}
+.written button:hover {
   border: 1px solid rgb(89, 89, 18);
   background-color: white;
   color: rgb(89, 89, 18);
@@ -203,11 +268,13 @@ nav ul li a:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 .whatcando h1 {
   color: rgb(106, 94, 31);
   width: 16em;
   font-size: 2.3em;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 .adah3:hover {
@@ -238,6 +305,7 @@ nav ul {
   gap: 50px;
   text-decoration: none;
 }
+
 .toupimg {
   position: fixed;
   width: 30px;
@@ -265,6 +333,24 @@ nav ul {
   }
 }
 @media (max-width: 1100px) {
+  .skin-care button {
+    height: 7vh;
+  }
+  .skin-care {
+    width: 30em;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+  }
+  .skin-care img {
+    width: 30em;
+    height: 30em;
+  }
+  .written .space22,
+  .space11 {
+    font-size: 1.9em;
+  }
+
   .whatcando h1 {
     font-size: 2em;
     font-weight: 500;
@@ -305,6 +391,24 @@ nav ul {
   }
 }
 @media (max-width: 550px) {
+  .skin-care {
+    width: 18em;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+  }
+  .skin-care button {
+    width: 8em;
+    height: 6vh;
+  }
+  .skin-care img {
+    width: 18em;
+    height: 20em;
+  }
+  .written .space22,
+  .space11 {
+    font-size: 1.3em;
+  }
   .abtbride button {
     height: 20vh;
     transition: 0.24s ease-in-out;
