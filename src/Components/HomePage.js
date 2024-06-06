@@ -64,7 +64,7 @@ export default function HomePage() {
     const handleScroll = () => {
       if (window.innerHeight > 900) {
         window.innerWidth < 480
-          ? setScroll(window.scrollY > 0 ? true : false)
+          ? setScroll(window.scrollY >=0 ? true : false)
           : setScroll(window.scrollY > 50 ? true : false);
         if (window.innerWidth <= 550 && window.innerWidth >= 480) {
           setScroll(window.scrollY > 0.1 ? true : false);
