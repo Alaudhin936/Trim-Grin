@@ -36,10 +36,9 @@ nav {
 }
 @keyframes onme {
   from {
-
     transform: translateX(-200%);
-
-  }}
+  }
+}
 .skinn {
   display: flex;
   align-items: center;
@@ -451,6 +450,9 @@ nav ul {
     font-weight: 600;
   }
 }
+.carousel .Carousel {
+  height: 80vw;
+}
 @media (max-width: 900px) {
   .carousel-caption {
     animation: fadeIn 1.3s ease-in-out;
@@ -544,8 +546,12 @@ nav ul {
   }
 }
 @media (max-width: 450px) {
+  .carousel .Carousel {
+    height: 120vw;
+  }
+
   .d-block {
-    height: 45vh;
+    height: 60vh;
     object-fit: cover;
     width: 100%;
   }
