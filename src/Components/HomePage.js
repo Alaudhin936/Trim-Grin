@@ -43,39 +43,28 @@ export default function HomePage() {
 
   const [scroll, setScroll] = useState(false);
   const [scroll1, setScroll1] = useState(false);
+
   useEffect(() => {
     const handleScroll1 = () => {
-      if (window.innerWidth < 900) {
-        window.innerWidth >= 1100
-          ? setScroll1(window.scrollY > 600 ? true : false)
-          : setScroll1(window.scrollY > 530 ? true : false);
+      if (window.scrollY > window.innerHeight * 0.6) {
+        setScroll1(true);
       } else {
-        window.innerWidth >= 1100
-          ? setScroll1(window.scrollY > 500 ? true : false)
-          : setScroll1(window.scrollY > 430 ? true : false);
+        setScroll1(false);
       }
     };
+
     window.addEventListener("scroll", handleScroll1);
     return () => {
       window.removeEventListener("scroll", handleScroll1);
     };
-  });
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerHeight > 900) {
-        window.innerWidth < 480
-          ? setScroll(window.scrollY >=0 ? true : false)
-          : setScroll(window.scrollY > 50 ? true : false);
-        if (window.innerWidth <= 550 && window.innerWidth >= 480) {
-          setScroll(window.scrollY > 0.1 ? true : false);
-        }
+      if (window.scrollY > window.innerHeight * 0.1) {
+        setScroll(true);
       } else {
-        window.innerWidth < 480
-          ? setScroll(window.scrollY > 1 ? true : false)
-          : setScroll(window.scrollY > 50 ? true : false);
-        if (window.innerWidth <= 550 && window.innerWidth >= 480) {
-          setScroll(window.scrollY > 0.1 ? true : false);
-        }
+        setScroll(false);
       }
     };
 
@@ -124,7 +113,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <br></br>
+      <br />
       <div className="skinn">
         <div className={`skin-care ${scroll1 ? "jilo" : ""}`}>
           <div className="written">
@@ -133,9 +122,9 @@ export default function HomePage() {
             </div>
             <div>
               <span className="space22">Natural Skin Care Services</span>
-              <br></br>
+              <br />
               <span className="space11">
-                Replenish,Rejuvenate And Revitalize Your Skin
+                Replenish, Rejuvenate And Revitalize Your Skin
               </span>
             </div>
             <button>Know More</button>
