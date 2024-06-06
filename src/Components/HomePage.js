@@ -45,9 +45,15 @@ export default function HomePage() {
   const [scroll1, setScroll1] = useState(false);
   useEffect(() => {
     const handleScroll1 = () => {
-      window.innerWidth >= 1100
-        ? setScroll1(window.scrollY > 600 ? true : false)
-        : setScroll1(window.scrollY > 530 ? true : false);
+      if (window.innerWidth < 900) {
+        window.innerWidth >= 1100
+          ? setScroll1(window.scrollY > 600 ? true : false)
+          : setScroll1(window.scrollY > 530 ? true : false);
+      } else {
+        window.innerWidth >= 1100
+          ? setScroll1(window.scrollY > 500 ? true : false)
+          : setScroll1(window.scrollY > 430 ? true : false);
+      }
     };
     window.addEventListener("scroll", handleScroll1);
     return () => {
@@ -56,11 +62,20 @@ export default function HomePage() {
   });
   useEffect(() => {
     const handleScroll = () => {
-      window.innerWidth < 450
-        ? setScroll(window.scrollY > 0.01 ? true : false)
-        : setScroll(window.scrollY > 50 ? true : false);
-      if (window.innerWidth <= 550 && window.innerWidth >= 480) {
-        setScroll(window.scrollY > 0.1 ? true : false);
+      if (window.innerHeight > 900) {
+        window.innerWidth < 480
+          ? setScroll(window.scrollY > 0 ? true : false)
+          : setScroll(window.scrollY > 50 ? true : false);
+        if (window.innerWidth <= 550 && window.innerWidth >= 480) {
+          setScroll(window.scrollY > 0.1 ? true : false);
+        }
+      } else {
+        window.innerWidth < 480
+          ? setScroll(window.scrollY > 1 ? true : false)
+          : setScroll(window.scrollY > 50 ? true : false);
+        if (window.innerWidth <= 550 && window.innerWidth >= 480) {
+          setScroll(window.scrollY > 0.1 ? true : false);
+        }
       }
     };
 
