@@ -45,14 +45,14 @@ export default function HomePage() {
   const [scroll1, setScroll1] = useState(false);
   useEffect(() => {
     const handleScroll1 = () => {
-      if (window.innerHeight < 900) {
+      if (window.innerWidth < 900) {
         window.innerWidth >= 1100
-          ? setScroll1(window.scrollY > 650 ? true : false)
-          : setScroll1(window.scrollY > 560 ? true : false);
+          ? setScroll1(window.scrollY > 600 ? true : false)
+          : setScroll1(window.scrollY > 530 ? true : false);
       } else {
         window.innerWidth >= 1100
           ? setScroll1(window.scrollY > 500 ? true : false)
-          : setScroll1(window.scrollY > 80 ? true : false);
+          : setScroll1(window.scrollY > 430 ? true : false);
       }
     };
     window.addEventListener("scroll", handleScroll1);
@@ -64,14 +64,14 @@ export default function HomePage() {
     const handleScroll = () => {
       if (window.innerHeight > 900) {
         window.innerWidth < 480
-          ? setScroll(window.scrollY >= 2 ? true : false)
+          ? setScroll(window.scrollY >= 0 ? true : false)
           : setScroll(window.scrollY > 50 ? true : false);
         if (window.innerWidth <= 550 && window.innerWidth >= 480) {
           setScroll(window.scrollY > 0.1 ? true : false);
         }
       } else {
         window.innerWidth < 480
-          ? setScroll(window.scrollY > 10 ? true : false)
+          ? setScroll(window.scrollY > 1 ? true : false)
           : setScroll(window.scrollY > 50 ? true : false);
         if (window.innerWidth <= 550 && window.innerWidth >= 480) {
           setScroll(window.scrollY > 0.1 ? true : false);
@@ -87,13 +87,8 @@ export default function HomePage() {
 
   return (
     <div>
-      <div style={{ width: "100vw", overflow: "hidden" }} className="carousel">
-        <Carousel
-          className="Carousel"
-          controls={true}
-          indicators={true}
-          interval={3000}
-        >
+      <div style={{ width: "100vw", overflow: "hidden" }}>
+        <Carousel controls={true} indicators={true} interval={3000}>
           {coroDetails.map((std, index) => (
             <Carousel.Item key={index}>
               <img src={std.imagee} className="d-block" alt={std.Caption1} />
@@ -107,13 +102,13 @@ export default function HomePage() {
           ))}
         </Carousel>
       </div>
+      <br />
       <hr />
       <br />
-
       <div className="whatcando">
         <div className="look">Look Mirror, See Yourself</div>
         <h1>What Our Stylist Engineers Can Do For You</h1>
-        <div className={`bride ${scroll ? "animate" : ""}`}>
+        <div className={`bride ${scroll ? "animate" : "sanimate"}`}>
           <div>
             <img src={bride} alt="Bridal" />
           </div>
@@ -131,7 +126,7 @@ export default function HomePage() {
       </div>
       <br></br>
       <div className="skinn">
-        <div className={`skin-care ${scroll1 ? "jilo" : ""}`}>
+        <div className={`skin-care ${scroll1 ? "jilo" : "kilo"}`}>
           <div className="written">
             <div>
               <span className="space">Skin Care</span>
