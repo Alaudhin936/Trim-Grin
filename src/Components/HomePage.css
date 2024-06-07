@@ -73,7 +73,7 @@ nav {
   animation-play-state: running;
 }
 .skin-care {
-  display: none;
+  display: flex;
   width: 84vw;
   color: rgb(63, 62, 62);
   justify-content: space-between;
