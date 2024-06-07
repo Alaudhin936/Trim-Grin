@@ -65,15 +65,12 @@ nav {
   }
 }
 .skin-care.jilo {
-  animation-name: movetotop;
-  animation-duration: 1.2s;
+ 
   display: flex;
-  animation-iteration-count: initial;
-  animation-direction: normal;
-  animation-play-state: running;
+
 }
 .skin-care {
-  display: flex;
+  display: none;
   width: 84vw;
   color: rgb(63, 62, 62);
   justify-content: space-between;
