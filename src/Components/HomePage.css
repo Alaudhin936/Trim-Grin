@@ -61,12 +61,14 @@ nav {
 }
 @keyframes movetotop {
   from {
-   transform: translateX(200%);
+   opacity: 0;
+  }to{
+    opacity: 1;
   }
 }
 .skin-care.jilo {
   animation-name: movetotop;
-  animation-duration: 1.2s;
+  animation-duration: 3s;
   display: flex;
   animation-iteration-count: initial;
   animation-direction: normal;
