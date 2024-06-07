@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Trim-Grin/static/css/main.bd4e76bf.css",
-    "main.js": "/Trim-Grin/static/js/main.18626ab5.js",
+    "main.css": "/Trim-Grin/static/css/main.88c522c7.css",
+    "main.js": "/Trim-Grin/static/js/main.6095c0cb.js",
     "static/js/453.501336a2.chunk.js": "/Trim-Grin/static/js/453.501336a2.chunk.js",
     "static/media/close-up-portrait-young-bearded-man.png": "/Trim-Grin/static/media/close-up-portrait-young-bearded-man.96be2013bf5dc9358a6d.png",
     "static/media/Dandruf Care.jpg": "/Trim-Grin/static/media/Dandruf Care.67932e556b0344c45f9d.jpg",
@@ -26,12 +26,12 @@
     "static/media/cancel.png": "/Trim-Grin/static/media/cancel.5949e4245eac826e4fad.png",
     "static/media/down-arrow.png": "/Trim-Grin/static/media/down-arrow.d1b50c1191b185006267.png",
     "index.html": "/Trim-Grin/index.html",
-    "main.bd4e76bf.css.map": "/Trim-Grin/static/css/main.bd4e76bf.css.map",
-    "main.18626ab5.js.map": "/Trim-Grin/static/js/main.18626ab5.js.map",
+    "main.88c522c7.css.map": "/Trim-Grin/static/css/main.88c522c7.css.map",
+    "main.6095c0cb.js.map": "/Trim-Grin/static/js/main.6095c0cb.js.map",
     "453.501336a2.chunk.js.map": "/Trim-Grin/static/js/453.501336a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd4e76bf.css",
-    "static/js/main.18626ab5.js"
+    "static/css/main.88c522c7.css",
+    "static/js/main.6095c0cb.js"
   ]
 }
