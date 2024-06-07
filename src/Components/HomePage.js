@@ -47,11 +47,11 @@ export default function HomePage() {
     const handleScroll1 = () => {
       if (window.innerHeight < 900) {
         window.innerWidth >= 1100
-          ? setScroll1(window.scrollY > 650 ? true : false)
-          : setScroll1(window.scrollY > 560 ? true : false);
+          ? setScroll1(window.scrollY > 500 ? true : false)
+          : setScroll1(window.scrollY > 400 ? true : false);
       } else {
         window.innerWidth >= 1100
-          ? setScroll1(window.scrollY > 500 ? true : false)
+          ? setScroll1(window.scrollY > 600 ? true : false)
           : setScroll1(window.scrollY > 50 ? true : false);
       }
     };
