@@ -36,10 +36,9 @@ nav {
 }
 @keyframes onme {
   from {
-
     transform: translateX(-200%);
-
-  }}
+  }
+}
 .skinn {
   display: flex;
   align-items: center;
@@ -82,17 +81,9 @@ nav {
   height: 37vw;
   background-color: rgb(170, 170, 170);
 }
-.skin-care.kilo{
-  height: 30vh;
-}
 .skin-care img {
   width: 20em;
   height: 35vw;
-}
-.bride.sanimate{
-  width: 20em;
-  height: 20em;
-  background-color: black;
 }
 .bride.animate {
   animation-name: onme;
@@ -459,6 +450,7 @@ nav ul {
     font-weight: 600;
   }
 }
+
 @media (max-width: 900px) {
   .carousel-caption {
     animation: fadeIn 1.3s ease-in-out;
@@ -552,8 +544,12 @@ nav ul {
   }
 }
 @media (max-width: 450px) {
+  .carousel .Carousel {
+    height: 120vw;
+  }
+
   .d-block {
-    height: 45vh;
+    height: 60vh;
     object-fit: cover;
     width: 100%;
   }
