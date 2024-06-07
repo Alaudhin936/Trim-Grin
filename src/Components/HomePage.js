@@ -71,7 +71,7 @@ export default function HomePage() {
         }
       } else {
         window.innerWidth < 480
-          ? setScroll(window.scrollY > 10 ? true : false)
+          ? setScroll(window.scrollY > 5 ? true : false)
           : setScroll(window.scrollY > 50 ? true : false);
         if (window.innerWidth <= 550 && window.innerWidth >= 480) {
           setScroll(window.scrollY > 0.1 ? true : false);
