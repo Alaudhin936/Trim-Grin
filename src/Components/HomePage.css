@@ -547,11 +547,12 @@ nav ul {
 }
 @media (max-width: 450px) {
   .carousel .Carousel {
-    height: 120vw;
+    height: 68vh;
+    position: relative;
   }
 
   .d-block {
-    height: 60vh;
+    height: 70vh;
     object-fit: cover;
     width: 100%;
   }
