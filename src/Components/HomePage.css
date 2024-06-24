@@ -307,7 +307,50 @@ nav ul {
   gap: 50px;
   text-decoration: none;
 }
-
+.smImg{
+  padding: 10px;
+display: flex;
+gap: 10px;
+}
+.smImg img:hover{
+transform: scale(1.1);
+cursor: pointer;
+background-color: rgb(0, 0, 0);
+}
+.smImg img{
+  transition: 0.2s ease-in-out;
+  padding: 1.9px;
+border-radius: 30px;
+  background-color: black;
+  width: 24px;
+}
+footer{
+  position: relative;
+  top: 100%;
+  display: flex;
+  gap: 120px;
+  background-color: rgb(41, 32, 24);
+  color: white;
+  flex-wrap: wrap;
+  padding: 10vh;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer li{
+  list-style: none;
+  color: white;
+}
+.agadi{
+  
+  font-size: large;
+}
 .toupimg {
   position: fixed;
   width: 30px;
@@ -393,6 +436,19 @@ nav ul {
   }
 }
 @media (max-width: 550px) {
+  footer{
+    position: relative;
+    top: 100%;
+    display: flex;
+    gap: 30px;
+    background-color: rgb(41, 32, 24);
+    color: white;
+    flex-wrap: wrap;
+    padding: 10vh;
+  }
+  .agadi{
+    font-weight: 600;
+  }
   .skin-care {
     width: 18em;
     flex-direction: column-reverse;

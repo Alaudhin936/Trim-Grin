@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import "./services.css";
+import { Link } from "react-router-dom";
+import linkedIn from "./SliderImages/icons8-linkedin-100.png";
+import facebbok from "./SliderImages/icons8-facebook-100.png";
+import youtube from "./SliderImages/icons8-youtube-100.png";
+import twitter from "./SliderImages/icons8-twitter-100.png";
+import instagram from "./SliderImages/icons8-instagram-100.png";
 import dandruf from "./Service Images/Dandruf Care.jpg";
 import massauge from "./Service Images/Head-Massauge.jpg";
 import Scalp from "./Service Images/Scalp-Treatment.jpg";
@@ -226,8 +232,8 @@ export default function Service() {
             )}
           </div>
         </div>
-        <div className="tmain" style={{ display: select ? "grid" : "none" }}>
-          <h2 style={{ textAlign: "center", border: "1px solid" }}>
+        <div className="tmain" style={{ display: select ? "grid" : "none" ,position:"relative"}}>
+          <h2 style={{ textAlign: "center", border: "1px solid",display:"flex",alignItems:"center",justifyContent:"center" ,height:"13vh"}}>
             Availed Items
           </h2>
           {empArr.map((std, index) => (
@@ -277,6 +283,63 @@ export default function Service() {
           </div>
         </div>
       </div>
+      <footer style={{position:"relative",top:"100px"}}>
+        <div>
+          <div className="agadi">Quick Links</div>
+          <br />
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="/toAbout">
+            <li>About</li>
+          </Link>
+          <li>Service</li>
+          <li>Salon Locator</li>
+          <li>Contact Us</li>
+        </div>
+        <div>
+          <div className="agadi">Our Services</div>
+          <br />
+          <li>Hair Care</li>
+          <li>Skin Care</li>
+          <li>Body Care</li>
+          <li>Events</li>
+          <li>Locate Us</li>
+        </div>
+        <div>
+          <div className="agadi">Contact</div>
+          <br />
+          <b>Trim&Grin Salon Pvt Ltd</b>
+          <br />
+          <p>
+            123 & 124, 3rd Floor, Ispahani Centre,<br></br>Nungambakkam High
+            Rd,Thousand Lights<br></br> Chennai,Tamil Nadu 600034
+          </p>
+        </div>
+        <div>
+          <div className="agadi">Get In Touch</div>
+          <br />
+          <b>+91 9361303772</b>
+          <li>
+            {" "}
+            <a href="mailto:ralaudhin1@gmail.com">ralaudhin1@gmail.com</a>
+          </li>
+          <div
+            className="smImg"
+            style={{
+              position: "relative",
+              left: "-10px",
+              flexDirection: "row",
+            }}
+          >
+            <img src={linkedIn} />
+            <img src={facebbok}></img>
+            <img src={twitter}></img>
+            <img src={youtube}></img>
+            <img src={instagram}></img>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

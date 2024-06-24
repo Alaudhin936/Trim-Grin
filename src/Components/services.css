@@ -6,6 +6,16 @@
   color: rgb(173, 163, 103);
   
 }
+
+.custom-collapse {
+  transition: height 0.3s ease-out;
+}
+.custom-collapse.show {
+  display: block;
+  height: auto;
+  transition: height 0.3s ease-in-out;
+}
+
 .cart img{
   width: 30px;
 }
@@ -183,6 +193,18 @@
   .top {
     flex-direction: column;
   }
+  .top .tmain {
+    display: grid;
+    height: 104vh;
+    padding: 40px;
+    grid-gap: 50px;
+    animation-name: fromleft;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-play-state: running;
+    animation-direction: normal;
+    grid-template-columns: repeat(1, auto);
+  }
   .search {
     width: 300px;
   }
@@ -192,6 +214,10 @@
 
   }
 }
-@media (max-width:800px){
- 
+@media (max-width:550px){
+  .top {
+    display: flex;
+    flex-direction: column; /* Change to column on smaller screens */
+  }
+  
 }
